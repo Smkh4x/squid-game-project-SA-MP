@@ -1,7 +1,7 @@
 // ╔══════════════════════════════════════╗
 // ║           SAMP FILTER SCRIPT         ║
 // ║          Squid Game Project          ║
-// ║            by SMK 'yoalsaki'              ║
+// ║            by SMK 'yoalsaki'         ║
 // ║        Style inspired by Dev SMK     ║
 // ╚══════════════════════════════════════╝
 //
@@ -993,3 +993,4 @@ CMD:stopsquidgame(playerid, params[])
 	
 	return 1;
 }
+
