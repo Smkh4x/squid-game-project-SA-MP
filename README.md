@@ -18,17 +18,17 @@ It allows you to create and manage **custom game rooms**, control player positio
 
 ## add this in your game mode example : (roleplay.pwn)
 
-// Squid Game Timer Variables
-new squidGameTimer = -1;
-new squidGameTime = 0;
-new squidGameActive = 0;
-new Text:squidGameDisplay = Text:INVALID_TEXT_DRAW;
-//new Text: squidGameDisplay[2];
-
-// Squid Game Music URL
-#define SQUID_GAME_MUSIC_URL "http://l.top4top.io/m_3670294cq0.mp3"
-
-// in public OnGameModeInit()
+	// Squid Game Timer Variables
+	new squidGameTimer = -1;
+	new squidGameTime = 0;
+	new squidGameActive = 0;
+	new Text:squidGameDisplay = Text:INVALID_TEXT_DRAW;
+	//new Text: squidGameDisplay[2];
+	
+	// Squid Game Music URL
+	#define SQUID_GAME_MUSIC_URL "http://l.top4top.io/m_3670294cq0.mp3"
+	
+	// in public OnGameModeInit()
 
 	// Create TextDraw for Squid Game Timer
 	squidGameDisplay = TextDrawCreate(266.000, 44.000, "00:00");
@@ -40,11 +40,11 @@ new Text:squidGameDisplay = Text:INVALID_TEXT_DRAW;
 	TextDrawSetOutline(squidGameDisplay, 1);
 	TextDrawBackgroundColor(squidGameDisplay, 0);
 
-// ============= SQUID GAME TIMER SYSTEM =============
+	// ============= SQUID GAME TIMER SYSTEM =============
 
-// Squid Game Timer Callback
-public UpdateSquidGameTimer()
-{
+	// Squid Game Timer Callback
+	public UpdateSquidGameTimer()
+	{
 	if(!squidGameActive) return;
 	
 	if(squidGameTime > 0)
@@ -90,16 +90,16 @@ public UpdateSquidGameTimer()
 		
 		SendClientMessageToAll(0xFFFF00FF, "Squid Game timer finished!");
 	}
-}
+	}
 
-// Squid Game Start Command
-CMD:startsquidgame(playerid, params[])
-{
+	// Squid Game Start Command
+	CMD:startsquidgame(playerid, params[])
+	{
 	// Check if admin or condition
 	if(squidGameActive)
 	{
-		SendClientMessage(playerid, 0xFF0000FF, "Squid Game is already running!");
-		return 1;
+	SendClientMessage(playerid, 0xFF0000FF, "Squid Game is already running!");
+	return 1;
 	}
 	
 	// Set game parameters (you can modify these values)
@@ -132,10 +132,10 @@ CMD:startsquidgame(playerid, params[])
 	SendClientMessageToAll(0x00FF00FF, msg);
 	
 	return 1;
-}
+	}
 
-CMD:stopsquidgame(playerid, params[])
-{
+	CMD:stopsquidgame(playerid, params[])
+	{
 	if(!squidGameActive)
 	{
 		SendClientMessage(playerid, 0xFF0000FF, "Squid Game is not running!");
@@ -163,7 +163,7 @@ CMD:stopsquidgame(playerid, params[])
 	SendClientMessageToAll(0xFFFF00FF, "Squid Game has been stopped!");
 	
 	return 1;
-}
+	}
 
 ## Installation
 
