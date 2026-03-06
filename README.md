@@ -20,4 +20,4 @@ It allows you to create and manage **custom game rooms**, control player positio
 
 1. Clone the repository:  
 ```bash
-git clone https://github.com/YourUsername/SMK-SquidGame.git
+git clone https://github.com/Smkh4x/squid-game-project-SA-MP.git
