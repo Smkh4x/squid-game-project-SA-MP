@@ -170,3 +170,6 @@ It allows you to create and manage **custom game rooms**, control player positio
 1. Clone the repository:  
 ```bash
 git clone https://github.com/Smkh4x/squid-game-project-SA-MP.git
+
+## play list project :
+https://youtu.be/q-UQ4wusflA?si=QBrlGYR6lj8b2G47
