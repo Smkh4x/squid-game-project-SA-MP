@@ -171,5 +171,12 @@ It allows you to create and manage **custom game rooms**, control player positio
 ```bash
 git clone https://github.com/Smkh4x/squid-game-project-SA-MP.git
 
-## play list project :
-https://youtu.be/q-UQ4wusflA?si=QBrlGYR6lj8b2G47
+# 🎮 Rock Paper Scissors
+
+## 🔗 Live Demo
+https://youtu.be/q-UQ4wusflA?si=-rpykeqptyXooIXR
+
+## 📸 Screenshot
+<p align="center">
+  <img src="./screenshot.png" width="600"/>
+</p>
